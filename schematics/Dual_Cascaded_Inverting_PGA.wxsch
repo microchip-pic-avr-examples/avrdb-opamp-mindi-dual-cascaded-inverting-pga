@@ -596,15 +596,15 @@ Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rota
 .EndWire
 .TextAnnotation
 Attributes orient=N0 x=-480 y=7200  
-TextInfo text="Inverting PGA gain settings:\n\n                                  | OPn Wiper    |\n| Gain  |    MUXWIP   |  Res Values  |\n|           | Value| Name|     R1 |     R2 |\n|0.06    |    0x0|  WIP0|     60k|      4k|\n|0.14    |    0x1|  WIP1|     56k|      8k|\n|0.33    |    0x2|  WIP2|     48k|    16k|\n|0.75    |    0x3|  WIP3|     32k|    32k|\n|0.33    |    0x4|  WIP4|     24k|    40k|\n|3         |    0x5|  WIP5|     16k|    48k|\n|7         |    0x6|  WIP6|       8k|    56k|\n|15       |    0x7|  WIP7|       4k|    60k|" font="arial" size="14" italics="false" bold="false" 
+TextInfo text="Inverting PGA gain settings:\n\n                                  | OPn Wiper    |\n| Gain  |    MUXWIP   |  Res Values  |\n|           | Value| Name|     R1 |     R2 |\n|0.06    |    0x0|  WIP0|     60k|      4k|\n|0.14    |    0x1|  WIP1|     56k|      8k|\n|0.33    |    0x2|  WIP2|     48k|    16k|\n|1         |    0x3|  WIP3|     32k|    32k|\n|1.66    |    0x4|  WIP4|     24k|    40k|\n|3         |    0x5|  WIP5|     16k|    48k|\n|7         |    0x6|  WIP6|       8k|    56k|\n|15       |    0x7|  WIP7|       4k|    60k|" font="arial" size="14" italics="false" bold="false" 
 Property name="StyleNormal" value="DefaultSchematicCaption" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelectedSchematicCaption" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="TextAlignment" value="AlignLeft" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 .EndTextAnnotation
 --SXVERSION1.5
 .Instance
-Attributes type=symbol name="Free_text" selected=0 protected=0 x=-480 y=7200 orient=N0
-Property name="value" value="Inverting PGA gain settings:\n\n                                  | OPn Wiper    |\n| Gain  |    MUXWIP   |  Res Values  |\n|           | Value| Name|     R1 |     R2 |\n|0.06    |    0x0|  WIP0|     60k|      4k|\n|0.14    |    0x1|  WIP1|     56k|      8k|\n|0.33    |    0x2|  WIP2|     48k|    16k|\n|0.75    |    0x3|  WIP3|     32k|    32k|\n|0.33    |    0x4|  WIP4|     24k|    40k|\n|3         |    0x5|  WIP5|     16k|    48k|\n|7         |    0x6|  WIP6|       8k|    56k|\n|15       |    0x7|  WIP7|       4k|    60k|" autopos=0 x=0 y=156 align=LeftBase linear=1 selectable=1 font=FreeText
+Attributes type=symbol name="Free_text" selected=1 protected=0 x=-480 y=7200 orient=N0
+Property name="value" value="Inverting PGA gain settings:\n\n                                  | OPn Wiper    |\n| Gain  |    MUXWIP   |  Res Values  |\n|           | Value| Name|     R1 |     R2 |\n|0.06    |    0x0|  WIP0|     60k|      4k|\n|0.14    |    0x1|  WIP1|     56k|      8k|\n|0.33    |    0x2|  WIP2|     48k|    16k|\n|1         |    0x3|  WIP3|     32k|    32k|\n|1.66    |    0x4|  WIP4|     24k|    40k|\n|3         |    0x5|  WIP5|     16k|    48k|\n|7         |    0x6|  WIP6|       8k|    56k|\n|15       |    0x7|  WIP7|       4k|    60k|" autopos=0 x=0 y=156 align=LeftBase linear=1 selectable=1 font=FreeText
 Netnames
 .EndInstance
 --EndSXVERSION1.5
@@ -617,7 +617,7 @@ Property name="TextAlignment" value="AlignLeft" autopos=1 normal=Left rotated=Le
 .EndTextAnnotation
 --SXVERSION1.5
 .Instance
-Attributes type=symbol name="Free_text" selected=1 protected=0 x=2880 y=7800 orient=N0
+Attributes type=symbol name="Free_text" selected=0 protected=0 x=2880 y=7800 orient=N0
 Property name="value" value="OP0OUT= - gain0 (Vin - VDD/2) + VDD/2\n\nVout = gain1 * gain0 (Vin - VDD/2) + VDD/2\n" autopos=0 x=0 y=156 align=LeftBase linear=1 selectable=1 font=FreeText
 Netnames
 .EndInstance
@@ -631,10 +631,10 @@ Property name="StyleSelected" value="DefaultTitleBlockSelected" autopos=1 normal
 Text value=".simulator SIMETRIX\n.TRAN 5u 40m\n.options noraw\n.inc .\\Opamp_AVR_DB.lb\n.simulator DEFAULT\n"
 LicenseInfo version="8.20l" feats=Basic|AD|Micron|Mcore2|Schematic|Advanced|Sim|Demo|Rtn|SIMPLIS_IF|beta serial=unknown user="unknown" code=unknown product="MPLAB Mindi" binarch=x86 system="WINNT/10.0/x64/17062916096/2/1/4/1398380449"
 SimulatorMode value="SIMetrix"
-View x=-543 y=2159 zoomlevel=32 zoom=9 snapgrid=120 offsetX=543 offsetY=-2168
+View x=-543 y=2168 zoomlevel=32 zoom=9 snapgrid=120 offsetX=543 offsetY=-2168
 Property name="CreateProduct" value="MPLAB Mindi" type=value
 Property name="GUID" value="{eeb2930e-e6de-4abf-b51d-c42ea6ae7de0}" type=value
-Property name="UserVersion" value="77" type=value
-Property name="WriteLog" value="77/77/44521/44521" type=value
+Property name="UserVersion" value="78" type=value
+Property name="WriteLog" value="78/78/44905/44905" type=value
 .EndSchematic
 .EndComponent
